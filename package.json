@@ -1,6 +1,6 @@
 {
   "name": "cyber-video-player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "video player",
   "main": "dist/bundle.js",
   "scripts": {

@@ -18,7 +18,7 @@ const Player = ({ src, type, width = '100%' }) => {
   }
 
   return (
-    <Video width={width} ref={videoRef} onMouseEnter={play} onMouseLeave={pause} controls>
+    <Video width={width} ref={videoRef} controls>
       <source
         src={src}
         type={type}
