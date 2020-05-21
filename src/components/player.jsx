@@ -1,19 +1,32 @@
 import React, { useRef, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import styled from "styled-components";
 
-const Player = ({ className, src, type }) => {
+const Video = styled.video`
+    margin: 5px;
+`
+
+const Player = ({ src, type }) => {
+    const videoRef = useRef(null)
+
+    const play = () => {
+        videoRef.current.play()
+    }
+
+    const pause = () => {
+        videoRef.current.pause()
+    }
 
     return (
-        <video width="620" controls>
+        <Video width="620" ref={videoRef} onMouseEnter={play} onMouseLeave={pause} controls>
             <source
                 src={src}
                 type={type} />
-        </video>
+        </Video>
     )
 }
 
 Player.propTypes = {
-    className: PropTypes.string,
     src: PropTypes.string.isRequired,
     type: PropTypes.string,
 }
