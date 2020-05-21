@@ -6,7 +6,7 @@ const Video = styled.video`
     margin: 5px;
 `
 
-const Player = ({ src, type, width = '100%' }) => {
+const Player = ({ src, type, height = '100%', width = '100%' }) => {
   const videoRef = useRef(null)
 
   // const play = () => {
@@ -18,7 +18,7 @@ const Player = ({ src, type, width = '100%' }) => {
   // }
 
   return (
-    <Video width={width} ref={videoRef} controls>
+    <Video height={height} width={width} ref={videoRef} controls>
       <source
         src={src}
         type={type}
