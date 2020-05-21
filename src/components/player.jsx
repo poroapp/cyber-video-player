@@ -6,7 +6,7 @@ const Video = styled.video`
     margin: 5px;
 `
 
-const Player = ({ src, type }) => {
+const Player = ({ src, type, width = "100%" }) => {
     const videoRef = useRef(null)
 
     const play = () => {
@@ -18,7 +18,7 @@ const Player = ({ src, type }) => {
     }
 
     return (
-        <Video width="620" ref={videoRef} onMouseEnter={play} onMouseLeave={pause} controls>
+        <Video width={width} ref={videoRef} onMouseEnter={play} onMouseLeave={pause} controls>
             <source
                 src={src}
                 type={type} />
@@ -29,6 +29,7 @@ const Player = ({ src, type }) => {
 Player.propTypes = {
     src: PropTypes.string.isRequired,
     type: PropTypes.string,
+    width: PropTypes.string
 }
 
 export default Player
