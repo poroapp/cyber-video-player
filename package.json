@@ -1,7 +1,7 @@
 {
-  "name": "react-styled-comp-rollup-starter-kit",
-  "version": "1.0.7",
-  "description": "template for styled components",
+  "name": "cyber-video-player",
+  "version": "1.0.0",
+  "description": "video player",
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup -c",
@@ -12,20 +12,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/6ravitas/react-styled-comp-rollup-starter-kit.git"
+    "url": "git+https://github.com/poroapp/cyber-video-player.git"
   },
   "keywords": [
     "rollup",
     "react",
     "styled components",
-    "template"
+    "video player"
   ],
   "author": "Gravitas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/6ravitas/react-styled-comp-rollup-starter-kit/issues"
+    "url": "https://github.com/poroapp/cyber-video-player/issues"
   },
-  "homepage": "https://github.com/6ravitas/react-styled-comp-rollup-starter-kit#readme",
+  "homepage": "https://github.com/poroapp/cyber-video-player#readme",
   "devDependencies": {
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
