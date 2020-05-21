@@ -9,13 +9,13 @@ const Video = styled.video`
 const Player = ({ src, type, width = '100%' }) => {
   const videoRef = useRef(null)
 
-  const play = () => {
-    videoRef.current.play()
-  }
+  // const play = () => {
+  //   videoRef.current.play()
+  // }
 
-  const pause = () => {
-    videoRef.current.pause()
-  }
+  // const pause = () => {
+  //   videoRef.current.pause()
+  // }
 
   return (
     <Video width={width} ref={videoRef} controls>
